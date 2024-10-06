@@ -13,7 +13,7 @@ using System.Collections.Generic;
 
 namespace Mod
 {
-    public class TemplateGunExpanded : AdvancedGunBehavior
+    public class TemplateGunExpanded : GunBehaviour
     {
         public static string internalName; //Internal name of the gun as used by console commands
         public static int ID; //The Gun ID stored by the game.  Can be used by other functions to call your custom gun.

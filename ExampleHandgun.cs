@@ -14,7 +14,7 @@ using System.Collections.Generic;
 
 namespace Mod
 {
-    public class ExampleHandgun : AdvancedGunBehavior
+    public class ExampleHandgun : GunBehaviour
     {
         public static string internalName;
         public static int ID;

@@ -14,7 +14,7 @@ using System.Collections.Generic;
 
 namespace Mod
 {
-    public class TemplateGun : AdvancedGunBehavior
+    public class TemplateGun : GunBehaviour
     {
         public static string internalName;
         public static int ID;
