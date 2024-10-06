@@ -15,10 +15,11 @@ namespace Mod
     public class Plugin : BaseUnityPlugin
     {
         public const string GUID = "creator.etg.modname";
-        public const string NAME = "MOD NAME";
+        public const string NAME = "GUN TEST";
         public const string VERSION = "0.0.0";
         public const string TEXT_COLOR = "#00FFFF";
 
+        public const string MODPREFIX = "bg";
         public void Start()
         {
             ETGModMainBehaviour.WaitForGameManagerStart(GMStart);
@@ -27,6 +28,7 @@ namespace Mod
         public void GMStart(GameManager g)
         {
             ExamplePassive.Register();
+            ExampleHandgun.Add();
             Log($"{NAME} v{VERSION} started successfully.", TEXT_COLOR);
         }
 
